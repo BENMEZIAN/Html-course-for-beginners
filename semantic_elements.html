@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Semantic tags</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body {
+                padding: 0; 
+                margin: 0;
+            }
+
+            /* Complete navbar */
+            header{
+                background-color: green;
+                padding: 10px;
+                margin: 0px;
+            }
+
+            header img{
+                margin: 0px 0px 0px 0px;
+                width: 50px;
+                height:50px;
+                padding: 5px;
+            }
+
+            header .left { 
+                float: left; 
+            }
+            
+            header ul { /*the unordered list*/
+                text-align: right;
+                width: 97%;
+                height: 20px;
+            }
+
+            header ul li { /*the item itself*/
+                display:inline;
+            }
+            
+            header ul li a { /*the list using link*/
+                color: white;
+                margin: 15px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 17px;
+            }
+            
+            header ul li a:hover {
+                color: black;
+            }
+
+            /* Complete main */
+            main{
+                margin: 0px 0px 0px 0px;
+                padding: 10px;
+                height: 350px;
+            }
+            
+            main ul { /*the unordered list*/
+                text-align: left;
+                width: 97%;
+                height: 20px;
+            }
+
+            main ul li{   
+                margin: 0px 0px 10px 0px;
+                font-size: 17px;
+            }
+
+            /* Complete footer */
+            footer {
+                background-color: black;
+                margin: 0px 0px 10px 0px;
+                padding: 10px;
+                height: 100px;
+            }
+
+            footer p{
+                color: white;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <img class="left" src="images/abdelmalek.jpg"/>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-question-circle"></i> About us</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <p>semantic elements are</p>
+            <ul>
+                <li>header</li>
+                <li>nav</li>
+                <li>main</li>
+                <li>footer</li>
+                <li>article</li>
+                <li>section</li>
+                <li>aside</li>
+                <li>details</li>
+                <li>summary</li>
+                <li>figure</li>
+            </ul>
+        </main>
+
+        <footer>
+           <p> &copy; copyright 2023</p>
+        </footer>
+        
+    </body>
+</html>

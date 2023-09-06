@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        
+        <style>
+            table {
+                border-collapse: collapse;
+                border-spacing: 0px;
+                justify-content: center;
+            }
+            table,th,td {
+                padding: 5px;
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            caption{
+                text-align: center;
+                color: black;
+                padding: 8px;
+                caption-side: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>HTML table</h2>
+        
+        <p>Table with thead, tfoot, and tbody</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header content 1</th>
+                    <th>Header content 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Body content 1</td>
+                    <td>Body content 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer content 1</td>
+                    <td>Footer content 2</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+
+        <p>Table with colgroup</p>
+        <table>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:green">
+                <col style="background-color:blue">
+              </colgroup>
+            <tr>
+                <th>Countries</th>
+                <th>Capitals</th>
+                <th>Population</th>
+                <th>Language</th>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Washington, D.C.</td>
+                <td>309 million</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Sweden</td>
+                <td>Stockholm</td>
+                <td>9 million</td>
+                <td>Swedish</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p>Table with colspan</p>
+        <table>
+            <caption>
+                Biography
+            </caption>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:green">
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">Name of person</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>abdelmalek</td>
+                <td>benmeziane</td>
+                <td>23</td>
+              </tr>
+            </tbody>
+        </table>
+
+        <h2>Conclusion</h2>
+        
+        <p>
+            Tag	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description <br>
+            <code class="w3-codespan">&lt;table&gt;</code> : Defines a table <br>
+            <code class="w3-codespan">&lt;th&gt;</code>	: Defines a header cell in a table<br>
+            <code class="w3-codespan">&lt;tr&gt;</code>	: Defines a row in a table<br>
+            <code class="w3-codespan">&lt;td&gt;</code>	: Defines a cell in a table<br>
+            <code class="w3-codespan">&lt;caption&gt;</code> :	Defines a table caption<br>
+            <code class="w3-codespan">&lt;colgroup&gt;</code> :	Specifies a group of one or more columns in a table for formatting<br>
+            <code class="w3-codespan">&lt;col&gt;</code> : Specifies column properties for each column within a <code class="w3-codespan">&lt;colgroup&gt;</code> element<br>
+            <code class="w3-codespan">&lt;thead&gt;</code> : Groups the header content in a table<br>
+            <code class="w3-codespan">&lt;tbody&gt;</code> : Groups the body content in a table<br>
+            <code class="w3-codespan">&lt;tfoot&gt;</code> : Groups the footer content in a table<br>
+        </p>
+        
+    </body>
+</html>

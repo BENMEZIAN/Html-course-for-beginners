@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Iframe</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        
+        <h2>HTML Iframes</h2>
+
+        <p>
+            An HTML iframe is used to display a web page within a web page.
+        </p>
+
+        <h2>Iframe Syntax</h2>
+
+        <p>
+            The HTML <code class="w3-codespan">&lt;iframe&gt;</code> tag specifies an inline frame.
+            An inline frame is used to embed another document within the current HTML document.
+        </p>
+
+        <h2>Example</h2>
+
+        <p>
+            &lt;iframe src=&quot;https://www.google.com&quot; title=&quot;description&quot;&gt;&lt;iframe&gt;
+        </p>
+
+        <iframe src="links.html" title="Html link" height="250px" scrolling="no"></iframe>
+
+        <h2>Iframe - Target for a Link</h2>
+
+        <iframe src="demo_iframe.htm" name="iframe_a" height="250px" scrolling="no"></iframe>
+        <br>
+        <a href="table.html" target="iframe_a">W3Schools.com</a>
+
+        <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+        <h2>Object syntax</h2>
+
+        <p>
+            &lt;object data=&quot;https://www.google.com&quot;&gt;&lt;/object&gt;
+        </p>
+
+        <object data="https://www.google.com"></object>
+
+        <h2>Chapter Summary</h2>
+
+        <ul>
+            <li>The HTML <code class="w3-codespan">&lt;iframe&gt;</code> tag specifies an inline frame</li>
+            <li>The src attribute defines the URL of the page to embed</li>
+            <li>Always include a title attribute (for screen readers)</li>
+            <li>The height and width attributes specify the size of the iframe</li>
+            <li>Use border:none; to remove the border around the iframe</li>
+            <li>
+                &lt;iframe src=&quot;https://www.google.com&quot;&lt;iframe&gt;
+                is equal to
+                &lt;object data=&quot;https://www.google.com&quot;&gt;&lt;/object&gt;
+                is equal to
+                &lt;embed src=&quot;https://www.google.com&quot;&gt;
+            </li>
+        </ul>
+                    
+    </body>
+</html>

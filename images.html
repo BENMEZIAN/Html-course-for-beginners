@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text formatting</title>
+        <!-- Define the character set used -->
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--this is a comment -->
+        <h1>Images</h1>
+
+        <h2>HTML images syntax</h2>
+        
+        The HTML <code class="w3-codespan">&lt;img&gt;</code> tag is used to embed an image in a web page.
+        The <code class="w3-codespan">&lt;img&gt;</code> tag has two required attributes: <br><br>
+        &nbsp 1- src - Specifies the path to the image<br><br>
+        &nbsp 2- alt - Specifies an alternate text for the image<br><br>
+
+        <h2>The src Attribute</h2>
+
+        <p>
+            The required src attribute specifies the path (URL) to the image.
+        When a web page loads, it is the browser, at that moment, that gets the image from a web server 
+        and inserts it into the page. Therefore, make sure that the image actually stays in the same spot 
+        in relation to the web page, otherwise your visitors will get a broken link icon. 
+        The broken link icon and the <mark style="background-color: greenyellow;">alt</mark> text are shown if the browser cannot find the image.
+        </p>
+        <br><br>
+
+        <h2>Image Size - Width and Height</h2>
+
+        <p>You can use the style attribute to specify the width and height of an image.</p>
+
+        <h2>Example</h2>
+        <p>
+            &lt;img src=&quot;images/abdelmalek.jpg&quot; alt=&quot;abdelmalek&quot; style=&quot;width:500px;height:600px;&quot;&gt;
+            <br><br>
+            or:
+            <br><br>
+            &lt;img src=&quot;images/abdelmalek.jpg&quot; alt=&quot;abdelmalek&quot; width=&quot;500px&quot; height=&quot;600px&quot;&gt;
+        </p>
+
+        <img src="images/abdelmalek.jpg" alt="abdelmalek" style="width:500px;height:600px;"/>
+
+        <h2>Image as a Link</h2>        
+
+        <p>To use an image as a link, put the <code class="w3-codespan">&lt;img&gt;</code> tag inside the <code class="w3-codespan">&lt;a&gt;</code> tag:</p>
+        
+        <a href="https://www.google.com" target="_blank">
+            <img src="images/abdelmalek.jpg" alt="abdelmalek" style="width:128px;height:128px;"/>
+        </a>
+        <h4>Click on the image</h4>
+
+        <h2>Image Floating</h2>
+        <p>Use the CSS float property to let the image float to the right or to the left of a text</p>
+
+        <p>
+            &lt;img src=&quot;images/abdelmalek.jpg&quot; alt=&quot;abdelmalek&quot; style=&quot;width:500px;height:600px;&quot;float:left&gt;
+            <br><br>
+            or:
+            <br><br>
+            &lt;img src=&quot;images/abdelmalek.jpg&quot; alt=&quot;abdelmalek&quot; style=&quot;width:500px;height:600px;&quot;float:right&gt;
+        </p>
+
+        <h2>Examples</h2>
+
+        <p>
+            <img src="images/abdelmalek.jpg" alt="Smiley face" style="float:right;width:128px;height:128px;">
+            The image will float to the right of the text.
+        </p>
+
+        <br><br> <br><br>
+
+        <p>
+            <img src="images/newV.PNG" alt="Smiley face" style="float:left;width:128px;height:128px;">
+            The image will float to the left of the text.
+        </p>
+
+        <br><br> <br><br><br>
+
+        <h2>Chapter Summary</h2>
+        <p>Use the HTML <code class="w3-codespan">&lt;img&gt;</code> element to define an image</p>
+        <p>Use the HTML src attribute to define the URL of the image</p>
+        <p>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed</p>
+        <p>Use the HTML width and height attributes or the CSS width and height properties to define the size of the image</p>
+        <p>Use the CSS float property to let the image float to the left or to the right</p>
+
+    </body>
+</html>

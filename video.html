@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Video</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <h2>HTML Video</h2>
+
+        <p>To show a video in HTML, use the <code class="w3-codespan">&lt;video&gt;</code> element</p>
+
+        <h2>Example</h2>
+
+        <p>
+            &lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;source src="audios/Kader Japonais - Bla bik.mp4" type="video/mpeg"&gt; <br>
+            &lt;/video&gt;
+        </p>
+
+        <video width="320" height="240" controls>
+            <source src="audios/Kader Japonais - Bla bik.mp4" type="video/mp4">
+            <track src="" kind="subtitles" label="text">
+        </video>
+
+        <!-- kind = captions, chapters, description, subtitles, metadata -->
+
+        <h2>How it Works</h2>
+
+        <p>
+            The controls attribute adds video controls, like play, pause, and volume. <br>
+
+            It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+            <br>
+            The <code class="w3-codespan">&lt;source&gt;</code> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+            <br>
+            The text between the <code class="w3-codespan">&lt;video&gt;</code> and <code class="w3-codespan">&lt;/video&gt;</code> tags will only be displayed in browsers that do not support the <code class="w3-codespan">&lt;video&gt;</code> element.
+        </p>
+
+        <h2>HTML <code class="w3-codespan">&lt;video&gt;</code> Autoplay</h2>
+        <p>To start a video automatically, use the autoplay attribute</p>
+        <p>Add muted after autoplay to let your video file start playing automatically (but muted)</p>
+
+        <p>
+            &lt;video controls autoplay muted&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;source src="audios/Kader Japonais - Bla bik.mp4" type="video/mp4"&gt; <br>
+            &lt;/video&gt;
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            Tag	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description <br><br>
+            <code class="w3-codespan">&lt;audio&gt;</code>	: Defines a video or movie <br><br>
+            <code class="w3-codespan">&lt;source&gt;</code>	: Defines multiple media resources for media elements, such as <code class="w3-codespan">&lt;video&gt;</code> and <code class="w3-codespan">&lt;audio&gt;</code>
+            <br><br>
+            <code class="w3-codespan">&lt;track&gt;</code>	: Defines text tracks in media players (les traces de texte)
+        </p>
+
+        <!-- kind = captions, chapters, description, subtitles, metadata -->
+
+    </body>
+</html>

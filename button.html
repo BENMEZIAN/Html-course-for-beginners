@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Button</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            .button {
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+            
+            .button1 {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #4CAF50;
+            }
+            
+            .button1:hover {
+              background-color: #4CAF50;
+              color: white;
+            }
+            
+            .button2 {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #008CBA;
+            }
+            
+            .button2:hover {
+              background-color: #008CBA;
+              color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h2>HTML Buttons</h2>
+
+        <button type="button">Click</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+
+        <h2>Example</h2>
+
+        <h1>The button element - Styled with CSS</h1>
+
+        <p>Use the :hover selector to change the style of the button when you move the mouse over it.</p>
+        <p><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>
+        
+        <button class="button button1">Green</button>
+        <button class="button button2">Blue</button>
+        
+    </body>
+</html>

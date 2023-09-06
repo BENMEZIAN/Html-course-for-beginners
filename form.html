@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <!-- Define a description of your web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for search engines -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Define the author of a page -->
+        <meta name="author" content="John Doe">
+        <!-- Define the viewport size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        
+        <h2>HTML Forms</h2>
+
+        <h2>Example</h2>
+
+        <form method="get" action="">
+            <fieldset>
+                <legend>Personal information:</legend>
+                <div>
+                    <label for="fname">Full name:</label>
+                    <input type="text" name="fname" id="fname">
+                </div><br>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div><br>
+                <div>
+                    <label for="age">Birthday:</label>
+                    <input type="date" name="date" id="date">
+                </div><br>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="60" step="1" value="18s">
+                </div><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div><br>
+                <div>
+                    <label>gender:</label>
+                    <input checked type="radio" name="gender" id="male" value="male"/>  
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="female"/>  
+                    <label for="female">female</label>  
+                </div><br>
+                <div>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country" style="width:160px">  
+                        <optgroup label="Asian countries">
+                            <option value="india">india</option>  
+                            <option value="pakistan">pakistan</option>    
+                            <option value="china">china</option>  
+                        </optgroup>
+                        <optgroup label="European countries">
+                            <option value="uk">UK</option>
+                            <option value="germany">Germany</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="spain">Spain</option>
+                        </optgroup>
+                        <optgroup label="American countries">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="brazil">Brazil</option>
+                        </optgroup>
+                        <option value="other">other</option>  
+                    </select>  
+                </div><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Added information:</legend>
+                <div>
+                    <label for="programming_language">Choose a programming language: </label>
+                    <input list="programming_language" id="language-choice" name="language-choice"/>
+                    <datalist id="programming_language">
+                      <option value="C/C++"></option>
+                      <option value="Java"></option>
+                      <option value="Python"></option>
+                      <option value="Php"></option>
+                      <option value="Android"></option>
+                    </datalist>
+                </div><br>
+                <div>
+                    <label>What's your degree: </label><br>
+                    <input type="checkbox" id="degree1" name="degree" value="Bs">
+                    <label for="degree1"> Bachelor</label><br>
+                    <input checked type="checkbox" id="degree2" name="degree" value="Ms">
+                    <label for="degree2"> Master</label><br>
+                    <input type="checkbox" id="degree3" name="degree" value="Phd">
+                    <label for="degree3"> PhD</label>
+                </div><br>
+                <div>
+                    <label for="language">Nationality: </label>
+                    <select id="language" name="language"> <!-- multiple -->
+                        <option value="indian">Indian</option>
+                        <option value="nepali">Nepali</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div><br>
+                <div>
+                    <p><label for="message">Message: </label></p>
+                    <textarea name="message" placeholder="Write something here..." id="message" rows="4" cols="50"></textarea>
+                </div><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Work section:</legend>
+                <div>
+                    <label for="CV">Upload your CV here:</label>
+                    <input type="file" name="CV" id="CV" required>
+                </div><br>
+                <div>
+                    <label for="level">What your english level:</label>
+                    <input type="range" name="level" id="level" min="0" max="10" step="1">
+                </div><br>
+                <div>
+                    <label for="linkedin_url">Your linkedin profile:</label>
+                    <input type="url" name="linkedin_url" id="linkedin_url">
+                </div><br>
+                <div>
+                    <label for="local-datetime">Current time:</label>
+                    <input type="datetime-local" name="local-datetime" id="local-datetime">
+                </div><br>
+                <div>
+                    <label for="hidden">Hidden info:</label>
+                    <input type="hidden" name="hidden" id="hidden">
+                </div><br>
+                <div>
+                    <label for="search">Search:</label>
+                    <input type="search" name="search" id="search">
+                </div><br>
+            </fieldset><br>
+            <div>
+                <button type="submit" value="Save">Save</button>
+                <button type="reset" value="Clear">Clear</button>
+            </div><br>
+        </form>
+        
+    </body>
+</html>
